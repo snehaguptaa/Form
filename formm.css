@@ -1,0 +1,49 @@
+*{
+  --color-brown: rgba(101,79,65, 0.5);
+  
+}
+body::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url("https://i.ytimg.com/vi/fYysUp3ySKc/maxresdefault.jpg");
+}
+#main{
+  margin: 0px 120px 40px 120px;
+  padding: 20px;
+  color: #ffffff;
+  opacity: 0.95;
+  background: rgba(101,79,65, 0.5);
+}
+h1{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+#description{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+}
+form{
+  background: var(--color-brown);
+  font-family: 'Raleway', sans-serif; 
+}
+input,select{
+  font-family: 'Raleway', sans-serif; 
+  padding: 2px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 590px){
+	#main{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+  
+
